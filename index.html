@@ -1,0 +1,173 @@
+<!--
+  Portfolio site for Sweety Gupta
+  - Beginner-friendly structure
+  - Sections: Hero, About, Skills, Contact, Footer
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweety Gupta — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Sweety Gupta — Web Developer, CSE, NIT Patna" />
+</head>
+<body>
+  <!-- Site header / navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Sweety Gupta</a>
+
+      <nav id="nav" class="nav">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hello — I'm</p>
+          <h1 class="hero-title">Sweety Gupta</h1>
+          <p class="hero-sub">CSE Student • Web Developer</p>
+
+          <p class="hero-desc">
+            I'm a passionate developer from NIT Patna (Roll: 2506006). I build clean,
+            responsive web interfaces and enjoy solving problems with code.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn outline" href="https://github.com/sg293307-cmd" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <!-- A simple profile card -->
+          <div class="card profile-card">
+            <div class="avatar">SG</div>
+            <div class="card-body">
+              <h3>Sweety Gupta</h3>
+              <p>NIT Patna • CSE</p>
+              <ul class="card-meta">
+                <li>Roll: 2506006</li>
+                <li>Email: <a href="mailto:sg293307@gamil.com">sg293307@gamil.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">
+          I am a Computer Science student at NIT Patna building web applications with
+          a focus on clean UI, accessibility and responsive design. I enjoy learning new
+          languages and collaborating on small projects.
+        </p>
+        <!-- two-column cards for quick facts -->
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Education</h3>
+            <p>NIT Patna — B.Tech (CSE)</p>
+          </div>
+          <div class="info-card">
+            <h3>Interests</h3>
+            <p>Web Development, Algorithms, System Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS GRID -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="lead">Languages and tools I work with</p>
+
+        <div class="skills-grid">
+          <!-- Each skill is a card — hover effects applied in CSS -->
+          <div class="skill-card">Web Development</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">C</div>
+          <div class="skill-card">C++</div>
+          <div class="skill-card">Python</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-card card">
+          <h2>Contact</h2>
+          <p>Want to collaborate or say hi? Send a message — it opens your email client.</p>
+
+          <!-- Contact form uses JS to build a mailto link -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>
+              <span>Name</span>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea id="message" name="message" rows="5" required placeholder="Write a short message..."></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send Message</button>
+              <button type="reset" class="btn outline">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <div class="card small">
+            <h3>Quick Info</h3>
+            <p><strong>College:</strong> NIT Patna</p>
+            <p><strong>Branch:</strong> CSE</p>
+            <p><strong>Roll No:</strong> 2506006</p>
+            <p><strong>Email:</strong> <a href="mailto:sg293307@gamil.com">sg293307@gamil.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/sg293307-cmd" target="_blank" rel="noopener">sg293307-cmd</a></p>
+          </div>
+
+          <div class="card small">
+            <h3>Social</h3>
+            <p>No LinkedIn provided — add it later for deployment.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sweety Gupta — Built with HTML, CSS & JS</p>
+      <nav class="footer-nav">
+        <a href="https://github.com/sg293307-cmd" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
